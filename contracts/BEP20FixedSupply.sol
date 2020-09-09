@@ -350,10 +350,10 @@ contract BEP20FixedSupply is Context, iBEP20, Ownable {
   string public _name;
 
   constructor() public {
-    _name = 'Token Name';
-    _symbol = 'TKN';
+    _name = 'Raven Protocol';
+    _symbol = 'RAVEN';
     _decimals = 18;
-    _totalSupply = 1*10**8 * 10**18; //100m
+    _totalSupply = 1*10**10 * 10**18; //10B
     _balances[msg.sender] = _totalSupply;
 
     emit Transfer(address(0), msg.sender, _totalSupply);
