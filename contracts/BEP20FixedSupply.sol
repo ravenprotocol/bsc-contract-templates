@@ -353,7 +353,7 @@ contract RavenProtocol is Context, iBEP20, Ownable {
     _name = 'Raven Protocol';
     _symbol = 'RAVEN';
     _decimals = 18;
-    _totalSupply = 1*10**10 * 10**18; //10B
+    _totalSupply = 1*10**10 * 10**18; //10B https://explorer.binance.org/asset/RAVEN-F66
     _balances[msg.sender] = _totalSupply;
 
     emit Transfer(address(0), msg.sender, _totalSupply);
